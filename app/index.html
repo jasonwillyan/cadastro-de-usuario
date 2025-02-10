@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Usuário</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="modal-container">
+        <div class="modal">
+            <h1 style="text-align: center;">Cadastro de Usuário</h1>
+            <form id="cadastroForm">
+                <label>Nome</label>
+                <input type="text" id="nome" placeholder="Ex: Jason Willyan">
+                <span class="error" id="nomeErro"></span>
+                
+                <label>E-mail</label>
+                <input type="email" id="email" placeholder="Ex: seuemail@gmail.com">
+                <span class="error" id="emailErro"></span>
+                
+                <label>Confirmação de E-mail</label>
+                <input type="email" id="confirmEmail">
+                <span class="error" id="confirmEmailErro"></span>
+                
+                <label>Senha</label>
+                <input type="password" id="senha">
+                <span class="error" id="senhaErro"></span>
+                
+                <label>Data de Nascimento</label>
+                <input type="date" id="nascimento">
+                <span class="error" id="nascimentoErro"></span>
+                
+                <div class="checkbox-container">
+                    <input type="checkbox" id="termos">
+                    <label for="termos">Ao informar seus dados e seguir para a próxima etapa, você automaticamente concorda com nossa Politica de Privacidade e aos termos de uso</label>
+                </div>
+                <span class="error" id="termosErro"></span>
+                
+                <button type="submit">Cadastrar</button>
+                <p id="mensagemSucesso">Cadastro realizado com sucesso!</p>
+            </form>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
